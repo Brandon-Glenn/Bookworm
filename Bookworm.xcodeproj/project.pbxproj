@@ -11,6 +11,12 @@
 		C3587A06277EE0C600547134 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3587A05277EE0C600547134 /* ContentView.swift */; };
 		C3587A08277EE0C700547134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3587A07277EE0C700547134 /* Assets.xcassets */; };
 		C3587A0B277EE0C700547134 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3587A0A277EE0C700547134 /* Preview Assets.xcassets */; };
+		C3FB80A22784A8A60038E974 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB80A12784A8A60038E974 /* RatingView.swift */; };
+		C3FB80A42784B0C30038E974 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB80A32784B0C20038E974 /* EmojiRatingView.swift */; };
+		C3FB80A62784BBBA0038E974 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB80A52784BBBA0038E974 /* DetailView.swift */; };
+		C3FC0A44278383C9000F9C85 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FC0A43278383C9000F9C85 /* DataController.swift */; };
+		C3FC0A4627842164000F9C85 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FC0A4527842164000F9C85 /* AddBookView.swift */; };
+		C3FC0A4C27842492000F9C85 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3FC0A4A27842492000F9C85 /* Bookworm.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		C3587A05277EE0C600547134 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C3587A07277EE0C700547134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3587A0A277EE0C700547134 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C3FB80A12784A8A60038E974 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		C3FB80A32784B0C20038E974 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
+		C3FB80A52784BBBA0038E974 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		C3FC0A43278383C9000F9C85 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		C3FC0A4527842164000F9C85 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		C3FC0A4B27842492000F9C85 /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,13 @@
 			isa = PBXGroup;
 			children = (
 				C3587A03277EE0C600547134 /* BookwormApp.swift */,
+				C3FC0A4A27842492000F9C85 /* Bookworm.xcdatamodeld */,
 				C3587A05277EE0C600547134 /* ContentView.swift */,
+				C3FB80A52784BBBA0038E974 /* DetailView.swift */,
+				C3FB80A32784B0C20038E974 /* EmojiRatingView.swift */,
+				C3FC0A4527842164000F9C85 /* AddBookView.swift */,
+				C3FB80A12784A8A60038E974 /* RatingView.swift */,
+				C3FC0A43278383C9000F9C85 /* DataController.swift */,
 				C3587A07277EE0C700547134 /* Assets.xcassets */,
 				C3587A09277EE0C700547134 /* Preview Content */,
 			);
@@ -138,7 +156,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3587A06277EE0C600547134 /* ContentView.swift in Sources */,
+				C3FB80A62784BBBA0038E974 /* DetailView.swift in Sources */,
+				C3FC0A44278383C9000F9C85 /* DataController.swift in Sources */,
+				C3FB80A42784B0C30038E974 /* EmojiRatingView.swift in Sources */,
 				C3587A04277EE0C600547134 /* BookwormApp.swift in Sources */,
+				C3FB80A22784A8A60038E974 /* RatingView.swift in Sources */,
+				C3FC0A4627842164000F9C85 /* AddBookView.swift in Sources */,
+				C3FC0A4C27842492000F9C85 /* Bookworm.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +301,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +331,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,6 +367,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C3FC0A4A27842492000F9C85 /* Bookworm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C3FC0A4B27842492000F9C85 /* Bookworm.xcdatamodel */,
+			);
+			currentVersion = C3FC0A4B27842492000F9C85 /* Bookworm.xcdatamodel */;
+			path = Bookworm.xcdatamodeld;
+			sourceTree = SOURCE_ROOT;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C35879F8277EE0C600547134 /* Project object */;
 }
