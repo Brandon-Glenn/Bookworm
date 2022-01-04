@@ -49,7 +49,7 @@ struct DetailView: View {
             Button("Delete", role:.destructive) { deleteBook() }
             Button("Cancel", role: .cancel) {}
         } message: {
-            Text("Are you sure?")
+            Text("Cofirm Deletion?")
         }
         
         .toolbar {
@@ -65,7 +65,7 @@ struct DetailView: View {
     
     func deleteBook() {
         moc.delete(book)
-//        try? moc.save()
+        try? moc.save()
         dismiss()
     }
     
