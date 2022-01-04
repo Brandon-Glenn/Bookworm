@@ -15,7 +15,8 @@ struct ContentView: View {
     
     @FetchRequest(sortDescriptors:[
         SortDescriptor(\.title),
-        SortDescriptor(\.author)
+        SortDescriptor(\.author),
+        SortDescriptor(\.date)
     
     ]) var books: FetchedResults<Book>
     
@@ -31,6 +32,7 @@ struct ContentView: View {
                         HStack {
                             EmojiRatingView(rating: book.rating)
                                 .font(.largeTitle)
+                            
                             VStack(alignment: .leading) {
                                 Text(book.title ?? "Unknown Title")
                                     .font(.headline)
